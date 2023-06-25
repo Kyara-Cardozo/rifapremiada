@@ -4,22 +4,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Rifa_assinada extends AppCompatActivity {
+public class Perfil extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rifa_assinada);
-    }
-
-    public void principal(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_perfil);
     }
 
     @Override
@@ -33,11 +27,22 @@ public class Rifa_assinada extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
+            case R.id.iteminicio:
 
+                Intent intent = new Intent(this, Pos_login.class);
+                startActivity(intent);
+
+                break;
+            case R.id.itemperfil:
+
+                Intent intent2 = new Intent(this, Perfil.class);
+                startActivity(intent2);
+
+                break;
             case R.id.itemsair:
 
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
+                Intent intent3 = new Intent(this, MainActivity.class);
+                startActivity(intent3);
 
                 break;
 

@@ -10,20 +10,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.RifaPremiada"
-
         tools:targetApi="31">
-
+        <activity
+            android:name=".Perfil"
+            android:exported="false" />
         <activity
             android:name=".Minhas_rifas"
             android:exported="false" />
         <activity
             android:name=".CriarRifa"
             android:exported="false" />
-
-
-
-
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -33,47 +29,51 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Pos_login"
+        <activity
+            android:name=".Pos_login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Acessar_cpf_verSuasRifas"
+        <activity
+            android:name=".Acessar_cpf_verSuasRifas"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Rifa_assinada"
+        <activity
+            android:name=".Rifa_assinada"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".CriarConta"
+        <activity
+            android:name=".CriarConta"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Redefinir_senha"
+        <activity
+            android:name=".Redefinir_senha"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
