@@ -2,38 +2,50 @@ package rifapremiada.com;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Redefinir_senha extends AppCompatActivity {
 
-    private View voltarMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_redefinir_senha);
 
-        Button voltarMain = findViewById(R.id.voltarMain);
+        Button showDialogButton = findViewById(R.id.voltarMain);
+
+        showDialogButton.setOnClickListener(v -> showAlertDialog());
 
 
-        }
-
-
-    public void voltarMain(View view) {
-
-        voltarMain.setOnClickListener(v -> {
-            // Código a ser executado quando o botão for clicado
-            Toast.makeText(getApplicationContext(), "Enviamos um email para recuperação!", Toast.LENGTH_LONG).show();
-
-            // Iniciar a nova atividade
-            Intent intent = new Intent(Redefinir_senha.this, MainActivity.class);
-            startActivity(intent);
-        });
     }
+
+
+
+private void showAlertDialog() {
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    builder.setTitle("Rifa Premiada")
+            .setMessage("Enviamos um email para redefinição de senha.")
+
+            .setPositiveButton("OK", (dialog, which) -> {
+                // Lógica a ser executada quando o botão OK for clicado
+
+                // Criar um Intent para iniciar a próxima atividade
+                Intent intent = new Intent(Redefinir_senha.this, MainActivity.class);
+                startActivity(intent);
+            });
+
+
+
+    AlertDialog dialog = builder.create();
+    dialog.show();
+}
+
+
+
+
 }
 
 
