@@ -15,6 +15,7 @@
     <string name="Button9">Visualizar</string>
     <string name="Button10">Excluir</string>
     <string name="Button1">Enviar</string>
+    <string name="Button11">Enviar</string>
     <string name="titulotelaInicial"> TELA INICIAL</string>
     <string name="titulocriarRifa"> CRIAR RIFA</string>
     <string name="titulominhasRifas"> MINHAS RIFAS</string>
@@ -49,7 +50,7 @@
     <string name="redefinir_senha_inserir_email">insira seu email</string>
     <string name="minhas_rifas_titulo">Veja suas rifas</string>
     <string name="minhas_rifas_cpf">CPF</string>
-    <string name="minhas_rifas_inserir_cpf">000.000.000-00</string>
+    <string name="minhas_rifas_inserir_cpf">000.000.000–00</string>
     <string name="minhas_rifas_titulo3">PREMIADA</string>
     <string name="minhas_rifas_titulo2">RIFA</string>
     <string name="mapa_rifa_titulo">MAPA</string>
@@ -65,5 +66,7 @@
     <string name="minhas_namorados">Rifa dia dos namorados</string>
     <string name="minhas_perfume">Rifa Perfume</string>
     <string name="minhas_titulo">Minhas rifas</string>
+    <string name="rifa_assinada">Rifa Assinada</string>
+    <string name="enviar11">Enviar</string>
 
 </resources>
