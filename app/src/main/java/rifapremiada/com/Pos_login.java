@@ -2,15 +2,30 @@ package rifapremiada.com;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+
+import rifapremiada.com.databinding.ActivityPosLoginBinding;
+
+
 public class Pos_login extends AppCompatActivity {
+
+    private ActivityPosLoginBinding recebe3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pos_login);
+
+
+
+
     }
 
     public void criarRifa(View view) {
@@ -21,5 +36,49 @@ public class Pos_login extends AppCompatActivity {
     public void minhasrifas(View view) {
         Intent intent = new Intent(this, Minhas_rifas.class);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.iteminicio:
+
+                Intent intent = new Intent(this, Pos_login.class);
+                startActivity(intent);
+
+                break;
+            case R.id.itemperfil:
+
+                Intent intent2 = new Intent(this, Perfil.class);
+                startActivity(intent2);
+
+                break;
+            case R.id.itemsair:
+
+                Intent intent3 = new Intent(this, MainActivity.class);
+                startActivity(intent3);
+
+                //deslogar users
+                FirebaseAuth.getInstance().signOut();
+                Intent MainActivity = new Intent(Pos_login.this, MainActivity.class);
+                startActivity(MainActivity);
+                finish();
+
+
+                break;
+
+            default:
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

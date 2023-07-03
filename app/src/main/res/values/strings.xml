@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RifaPremiada</string>
+    <string name="app_name">Rifa Premiada</string>
     <string name="main_send">Enviar</string>
     <string name="main_Password"> Senha</string>
     <string name="main_user"> Diga o seu email </string>
@@ -68,5 +68,14 @@
     <string name="minhas_titulo">Minhas rifas</string>
     <string name="rifa_assinada">Rifa Assinada</string>
     <string name="enviar11">Enviar</string>
+    <string name="menu_sair">Sair</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_confUser">Configuração</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="titlePerfil"> Perfil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
 
 </resources>

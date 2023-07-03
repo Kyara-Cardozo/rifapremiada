@@ -88,7 +88,7 @@
         app:layout_constraintVertical_bias="0.066" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
+        android:id="@+id/cadastro_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -96,6 +96,7 @@
         android:hint="@string/cadastro_inserir_email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
@@ -104,7 +105,7 @@
         app:layout_constraintVertical_bias="0.553" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/cadastro_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -112,6 +113,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="@string/cadastro_campo"
+        android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
@@ -120,7 +122,7 @@
         app:layout_constraintVertical_bias="0.393" />
 
     <EditText
-        android:id="@+id/editTextNumberSigned"
+        android:id="@+id/cadastro_cpf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -128,6 +130,7 @@
         android:hint="@string/cadastro_inserir_cpf"
         android:inputType="numberSigned"
         android:minHeight="48dp"
+        android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
@@ -136,7 +139,7 @@
         app:layout_constraintVertical_bias="0.695" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
+        android:id="@+id/cadastro_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -144,6 +147,7 @@
         android:hint="@string/cadastro_inserir_senha"
         android:inputType="numberPassword"
         android:minHeight="48dp"
+        android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
@@ -152,7 +156,7 @@
         app:layout_constraintVertical_bias="0.826" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/cadastro_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#4CAF50"
