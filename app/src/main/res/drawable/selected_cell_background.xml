@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="#FF00FF00" /> <!-- Cor de fundo quando selecionado -->
+            <corners android:radius="8dp" /> <!-- Borda arredondada (opcional) -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#E62525" /> <!-- Cor de fundo padrão -->
+            <corners android:radius="8dp" /> <!-- Borda arredondada (opcional) -->
+        </shape>
+    </item>
+</selector>

@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if(email2.isEmpty() || senha2.isEmpty() ){
-                    Toast.makeText(getApplicationContext(),"Preencha todos os campos!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Preencha todos os campos 1!", Toast.LENGTH_LONG).show();
                 }else{
                     //Toast.makeText(getApplicationContext(),"Parabéns!", Toast.LENGTH_LONG).show();
                     auth2.signInWithEmailAndPassword(email2,senha2).addOnCompleteListener(task -> {

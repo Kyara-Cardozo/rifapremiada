@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@color/teal_200" /> <!-- Cor de fundo quando selecionado -->
+    <item android:drawable="@color/diferente" />  <!-- Cor de fundo padrão -->
+
+</selector>
