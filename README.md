@@ -57,14 +57,36 @@
   <br>
   <img src="https://img.shields.io/badge/-Linkedin-1C1C1C?style=for-the-badge&logo=Linkedin&logoColor=00FFFF&link=https://www.linkedin.com/in/tiago-silva-130330186/" style= "width:90px;"/>
   </a>
-
-
 </table>
-   
+
+  <br>
+<h2 align="center">
+   Story Board
+</h2>
+<p align="center">
+<img align="center" src="https://github.com/Kyara-Cardozo/rifapremiada/assets/69278952/336d48ca-8859-41ff-8bf8-b0936459b3c5" style="width: 60%;" alt="Capa">
+</p>
+  <br>
+
+  <br>
+<h2 align="center">
+   Média Fidelidade
+</h2>
+<p align="center">
+<img align="center" src="https://github.com/Kyara-Cardozo/rifapremiada/assets/69278952/7e81070d-ff58-47bb-b3f1-6bf7c7a2cb70" style="width: 50%;" alt="Capa">
+</p>
+</h2>
+<p align="center">
+<img align="center" src="https://github.com/Kyara-Cardozo/rifapremiada/assets/69278952/a92b4d62-e5a9-41b1-9a13-5cf1d8274be9" style="width: 50%;" alt="Capa">
+</p>
+  <br>
+
+  
+
 <h2 align="center">
    Diagramas
 </h2>
-
+  <br>
 <p align="center"> Diagrama de Caso de Uso</p>
 <p align="center">
 <img align="center" src="https://github.com/Kyara-Cardozo/rifapremiada/assets/69278952/010d6115-66ec-41e2-bda9-1b2470acf01e" style="width: 60%;" alt="Capa">
