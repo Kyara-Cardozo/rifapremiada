@@ -2,22 +2,34 @@ package rifapremiada.com;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import rifapremiada.com.databinding.ActivityCriarContaBinding;
 
 
 public class CriarConta extends AppCompatActivity {
-        //update next line
-       // private @NonNull ActivityMainBinding editTextTextEmailAddress3;
-     private ActivityCriarContaBinding recebe;
+    //update next line
+    // private @NonNull ActivityMainBinding editTextTextEmailAddress3;
+    private ActivityCriarContaBinding recebe;
+
+    private ActivityCriarContaBinding recebe2;
+    FirebaseFirestore banco_dados = FirebaseFirestore.getInstance();
+
     //private ActivityMainBinding binding;
 
 
@@ -43,11 +55,36 @@ public class CriarConta extends AppCompatActivity {
 
                 if(email.isEmpty() || senha.isEmpty() || nome.isEmpty() || cpf.isEmpty()){
                     Toast.makeText(getApplicationContext(),"Preencha todos os campos!", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(getApplicationContext(),"Sucesso!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(getApplicationContext(), Pos_login.class);
+                    startActivity(intent);
                 }
+
+                // Dados do usuário
+                Map<String, Object> usuariosMap = new HashMap<>();
+                usuariosMap.put("nome", nome);
+                usuariosMap.put("email", email);
+                usuariosMap.put("cpf", cpf);
+
+                // Referência ao documento onde os dados serão salvos
+                DocumentReference usuarioRef = banco_dados.collection("usuarios").document("id_do_usuario");
+
+                // Salvando os dados no documento
+                usuarioRef.set(usuariosMap)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                    Log.d("db", "Sucesso ao salvar os dados do usuário");
+                                }
+                            }
+                        });
             }
         });
 
-    }
+
+    }// end onCreat
 
     public void posLogin(View view) {
         Intent intent = new Intent(this, Pos_login.class);

@@ -6,22 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Pos_login">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:text="@string/main_titulo"
-        android:textColor="#43A047"
-        android:textSize="24sp"
-        android:textStyle="bold"
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="244dp"
+        android:layout_height="205dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061"
-        tools:text="@string/main_titulo" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/rifa_premiada_titulo_foreground" />
 
     <TextView
         android:id="@+id/textView15"
@@ -32,11 +28,11 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191"
-        tools:text="@string/pos_login" />
+        app:layout_constraintVertical_bias="0.331"
+        tools:text="Olá Seja Bem-Vindo!" />
 
     <TextView
         android:id="@+id/textView16"
@@ -47,26 +43,11 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239"
+        app:layout_constraintVertical_bias="0.403"
         tools:text="@string/pos_login2" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="111dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#4CAF50"
-        android:onClick="criarRifa"
-        android:text="@string/Button5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352"
-        tools:text="@string/Button5" />
 
     <Button
         android:id="@+id/button5"
@@ -80,9 +61,23 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462"
+        app:layout_constraintVertical_bias="0.614"
         tools:text="@string/Button6" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="criarRifa"
+        android:text="@string/Button5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512"
+        tools:text="@string/Button5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

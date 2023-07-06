@@ -54,7 +54,7 @@
     <string name="minhas_rifas_titulo3">PREMIADA</string>
     <string name="minhas_rifas_titulo2">RIFA</string>
     <string name="mapa_rifa_titulo">MAPA</string>
-    <string name="pos_login">Olá, Ana!</string>
+    <string name="pos_login">Olá, Seja Bem-Vindo!</string>
     <string name="pos_login2">Veja suas rifas já criadas e crie novas.</string>
     <string name="editar_rifa_nome">Nome</string>
     <string name="editar_rifa_premio">Prêmio</string>
@@ -75,6 +75,7 @@
     <string name="menu_inicio">Inicio</string>
     <string name="menu_perfil">Perfil</string>
     <string name="titlePerfil"> Perfil</string>
+    <string name="insiraseunome"> Insira seu nome aqui</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 
