@@ -81,7 +81,12 @@
 </p>
   <br>
 
-  
+  <h2 align="center">
+   Mapa Conceitual
+</h2>
+<p align="center">
+<img align="center" src="https://github.com/Kyara-Cardozo/rifapremiada/assets/69278952/ffaa43df-2527-41f3-abb8-3b42329250cb" style="width: 50%;" alt="Capa">
+</p>
 
 <h2 align="center">
    Diagramas
@@ -98,8 +103,18 @@
 </p>
 
 
+
+
+
 [Requisitos Funcionais e Não Funcionais](https://github.com/Kyara-Cardozo/rifapremiada/files/11968842/RifaPremiada.-.Requisitos.pdf)
 
 [Histórias de usuário.pdf](https://github.com/Kyara-Cardozo/rifapremiada/files/11968857/Historias.de.usuario.pdf)
+
+[_Prototype.pdf](https://github.com/Kyara-Cardozo/rifapremiada/files/12029105/_Prototype.pdf)
+
+[Criar rifa.pdf](https://github.com/Kyara-Cardozo/rifapremiada/files/12029108/Criar.rifa.pdf)
+
+
+
 
 
